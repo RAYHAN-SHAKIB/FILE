@@ -287,7 +287,7 @@ def fia():
 				input(' Press enter to back ')
 				os.system('python RAYHAN.py')
 			elif xd in ['2','02']:
-				menu()
+				'menu()
 			elif xd in ['3','03']:
 				bd()
 			elif xd in ['4','04']:
@@ -391,11 +391,11 @@ def menu():
 	linex()
 	opt = input('\x1b[97;1m[√] SELECT OPT: ')
 	if opt =='1':
-		random_number1()
+		'random_number1()
 	elif opt =='2':
-		random_number2()
+		'random_number2()
 	elif opt =='3':
-		random_number3()
+		'random_number3()
 	
 	else:
 		print('\n\033[1;31mChoose valid option\033[0;97m')
@@ -410,7 +410,7 @@ def random_number1():
 	kode = input('[+]\033[1;37m PUT YOUR SIM CODE : ')
 	os.system('clear')
 	print(logo)
-	limit = int(input('\x1b[97;1m[+]How many numbers do you want to add ? '))
+	'limit = int(input('\x1b[97;1m[+]How many numbers do you want to add ? '))
 	for nmbr in range(limit):
 		nmp = ''.join(random.choice(string.digits) for _ in range(7))
 		uid.append(nmp)
@@ -595,4 +595,4 @@ def fcrack(uid,pwx,tl):
 	except:
 		pass
 
-fia()
+#fia()
